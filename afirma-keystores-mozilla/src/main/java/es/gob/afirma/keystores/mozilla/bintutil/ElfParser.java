@@ -147,7 +147,7 @@ public final class ElfParser {
 			) ||
 		"32".equals(Platform.getJavaArch()) && //$NON-NLS-1$
 			(Platform.MACHINE.X86.equals(Platform.getMachineType()) ||
-				Platform.MACHINE.AMD64.equals(Platform.getMachineType())) &&
+				Platform.MACHINE.AMD64.equals(Platform.getMachineType())) && // 32 puede estar en maquina de 32 o de 64 bits
 				ElfMachineType.X86.equals(a);
 	}
 
